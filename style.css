@@ -295,6 +295,9 @@ background-color: var(--dark-blue);
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
 }
+.grid-card:nth-child(1){
+    grid-row: 1/4;
+}
 .grid-card{
     background-color: var(--light-peach);
 }

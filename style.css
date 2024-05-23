@@ -18,6 +18,9 @@
     --light-black: #1d1d1d;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 
 /* Hero Section */
 /* Section one */
@@ -287,21 +290,94 @@ background-color: var(--dark-blue);
 }
 /* Section Five */
 .grid-container{
-    background-color: red;
+    /* background-color: red; */
     width: 60%;
     height: 70vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1.2rem;
+    grid-auto-rows: 15rem;
 }
 .grid-card:nth-child(1){
     grid-row: 1/4;
+    background-image: url(images/rado\ watch.jpg);
+}
+.grid-card:nth-child(2){
+    grid-row: 1/3;
+    background-image: url(images/citizen.png);
+}
+.grid-card:nth-child(3){
+    background-image: url(images/geneve\ watch.jpg);
+   
+}
+
+.grid-card:nth-child(4){
+    grid-row: 3/4;
+    background-image: url(images/tissot\ watch.jpg);
+}
+.grid-card:nth-child(5){
+    background-image: url(images/omega\ watch.jpg);
+   
+}
+.grid-card:nth-child(6){
+    background-image: url(images/fitron\ watch.jpg);
+   
 }
 .grid-card{
     background-color: var(--light-peach);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.grid-card::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.54);
+    inset: 0;
+    transform: scaleX(0);
+    transform-origin: top;
+    transition: transform 1s ease-in-out;
+}
+.grid-card:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.grid-card::after{
+    content:attr(collection);
+    position: absolute;
+    text-transform: uppercase;
+    background: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0.8rem 1.7rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
+
+}
+.grid-card:hover::after{
+    opacity: 1;
+    visibility: visible;
 }
 
+/* Footer */
+footer{
+    background-color: var(--light-black);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content{
+    color: white;
+    font-size: 1.5rem;
+    
+}
 
 
 
@@ -392,6 +468,16 @@ background-color: var(--dark-blue);
     }
     .four-btn{
         font-size: 1rem;
+    }
+
+    /* Section Five */
+    .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 90%;
+    }
+    .grid-card:nth-child(1),.grid-card:nth-child(2){
+        grid-row: 1/2;
     }
     
 }

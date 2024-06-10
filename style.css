@@ -380,18 +380,9 @@ footer{
 }
 
 
-
-
-
-
-
-
-
-
-
-/* Media Queries */
+/* Media Queries for mobile display */
 /*Section one */
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 576px){
     .image{
         display: none;
     }
@@ -400,6 +391,7 @@ footer{
      
         position: absolute;
         top: 0;
+        overflow: hidden;
         width: 100%;
         height: 100%;
         margin: auto;
@@ -432,8 +424,10 @@ footer{
     }
     header{
         /* background-color: skyblue; */
-        justify-content: flex-start;
+        justify-content: flex-end;
+       
     }
+   
 
     /* Section two */
     .container-section-two img{
@@ -481,3 +475,285 @@ footer{
     }
     
 }
+
+/* Media Queries for 768 display */
+/*Section one */
+@media only screen and (max-width: 768px){
+   
+    
+    .image{
+        display: none;
+    }
+    
+    .navlinks{
+     
+        position: absolute;
+        top: 0;
+        font-size: 5rem;
+        
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: var(--ligth-gray);
+        /* display: flex; */
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       left: 100%;
+       z-index: 2;
+       gap: 2rem;
+       transition: 1s ease-in-out;
+        
+    }
+    .navlinks-active{
+        left: 0;
+    }
+    .navlinks li a{
+        margin-left: 0;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .hamburger{
+        display: block;
+        z-index: 5;
+    }
+    .logo{
+        z-index: 5;
+        font-size: 3rem;
+        font-weight: bolder;
+        color: orangered;
+    }
+    .content h1{
+        font-size: 5rem;
+        font-weight: bolder;
+
+    }
+    .content h2{
+        font-size: 2.5rem;
+        
+    }
+    .content p{
+        font-size: 1.8rem;
+    }
+    .btn .btn1{
+        padding: 2rem 4rem;
+        font-size: 2rem;
+    }
+    .btn .btn2{
+        padding:1.9rem 3rem;
+        font-size: 2rem;
+    }
+    header{
+        /* background-color: skyblue; */
+        justify-content: first baseline;
+       
+    }
+   
+
+    /* Section two */
+    .container-section-two img{
+        display: none;
+    }
+    .section-two-heading{
+        font-size: 5rem;
+        font-weight: bolder;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section-two-para{
+        font-size: 1.5rem;
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .section-two-pricing{
+        font-size: 1.8rem;
+    }
+    .section-two-btn{
+        font-size: 2rem;
+        padding: 0.7rem 1.5rem;
+        margin: 0 15rem;
+    }
+    .inner-section{
+        /* background-color: red; */
+        width: 90%;
+    }
+    /* Section Three */
+
+    .card img{
+        width: 80%;
+    }
+    /* Section Four */
+    .offer{
+        font-size: 5rem;
+    }
+    .four-heading{
+        font-size: 5rem;
+    }
+    .four-btn{
+        font-size: 2rem;
+    }
+
+    /* Section Five */
+    .grid-container{
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: repeat(3, 2fr);
+        width: 95%;
+
+       
+    }
+    .grid-card:nth-child(1),.grid-card:nth-child(2){
+        grid-row: 1/2;
+    }
+
+    /* Footer */
+    footer{
+        
+    width: 100%;
+    height: 150px;
+    background-color: #F9E3BC;
+    }
+    .footer-content{
+        font-size: 2rem;
+        font-weight: bolder;
+        color: orangered;
+        
+    }
+   
+    
+}
+
+
+
+
+
+
+
+
+/* Media Queries for led display */
+/*Section one */
+ /* @media only screen and (min-width: 768px){
+    
+    .image{
+        display: none;
+    }
+    
+    .navlinks{
+     
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        background-color: var(--ligth-gray); */
+        /* display: flex; */
+        /* flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       left: 100%;
+       z-index: 2;
+       gap: 3rem;
+       transition: 1s ease-in-out;
+        
+    }
+    .navlinks-active{
+        left: 0;
+    }
+    .navlinks li a{
+        margin-left: 0;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .hamburger{
+        display: block;
+        z-index: 5;
+       
+    }
+    .logo{
+        font-size: 5rem;
+        z-index: 5;
+        font-weight: bolder;
+        color: orangered;
+        
+       
+    }
+    .content h1{
+        font-size: 4rem;
+    } */
+    /* header{ */
+        /* background-color: skyblue; */
+        /* justify-content: flex-start;
+    } */
+
+    /* Section two */
+    /* .container-section-two img{
+        display: none;
+    }
+    .section-two-heading{
+        font-size: 2.9rem;
+        font-weight: bold
+    }
+    .section-two-para{
+        font-size: 1rem;
+        max-width: 100%;
+       
+    }
+    .section-two-pricing{
+        font-size: 1.5rem;
+    }
+    .section-two-btn{
+        font-size: 1rem;
+        padding: 0.7rem 1.5rem;
+    }
+    .inner-section{ */
+        /* background-color: red; */
+        /* width: 90%;
+    } */
+    /* Section three */
+    .card{
+        /* border-radius: 60px;
+        width: 80%;
+        background: rgb(233, 228, 228);
+
+    }
+    .card img{
+        width: 80%;
+    } */
+    /* Section Four */
+    /* .offer{
+        font-size: 4rem;
+    }
+    .four-heading{
+        font-size: 3rem;
+    }
+    .four-btn{
+        font-size: 1rem;
+    } */
+
+    /* Section Five */
+    /* .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 90%;
+    }
+    .grid-card:nth-child(1),.grid-card:nth-child(2){
+        grid-row: 1/2;
+    }
+    
+} */
+ 
+
+
+
+
+
+
+
+
+
+

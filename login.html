@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="logo" style="font-size: 80px;color: orangered;">watchco...</div>
+        <ul class="navlinks" id="navlinks">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li ><a href="#product">Product</a></li>
+          <li><a href="#arrivals">Arrivals</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#offer">Offer</a></li>
+          <ul>
+            <li><a href="login.html"><button class="log-btn active" >Log In</button></a></li>
+            <li><a href="login.html"><button class="sign-btn active">Sign Up</button></a></li>
+        </ul>
+         
+  
+          </li>
+        </ul>
+        <div class="hamburger" id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
     <div class="container">
         <div class="form-box">
             <h1 class="title">Registration</h1>
@@ -27,7 +51,8 @@
                 </div>
 
                 <div class="btn-field">
-                    <button type="button" class="signupbtn" onclick="registerUser()">Sign up</button>
+                    <button class="signupbtn"> <a href="login.html">Sign up</a></button>
+                    <!-- <button  type="button" class="signupbtn">Sign up</button> -->
                 </div>
             </form>
         </div>
@@ -46,11 +71,20 @@
                 </div>
 
                 <div class="btn-field">
-                    <button type="button" class="signinbtn" onclick="signInUser()">Sign in</button>
+                    <!-- <button type="button" class="signinbtn" onclick="signInUser()">Sign in</button> -->
+                    <button class="signupbtn"> <a href="login.html">Sign in</a></button>
+
                 </div>
             </form>
         </div>
     </div>
+
+
+    <footer>
+        <p class="footer-content" >
+          Designed by MrCoder
+        </p>
+        </footer>
     
     <script src="script.js">
        

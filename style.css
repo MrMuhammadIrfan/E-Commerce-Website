@@ -38,11 +38,12 @@ nav{
 .navlinks{
     list-style: none;
     display: flex;
-   
-    
-    
 
     
+}
+a {
+    text-decoration: none;
+    color: white;
 }
 .navlinks li a{
     text-decoration: none;
@@ -439,7 +440,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
 }
 
 .form-box {

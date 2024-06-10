@@ -23,14 +23,8 @@ html{
 }
 
 /* Hero Section */
-/* Section one */
+ /* background-color: burlywood; */
 
-
-.section{
-    min-height: 100vh;
-    width: 100%;
-    /* background-color: burlywood; */
-}
 nav{
     width: 80%;
     height: 13vh;
@@ -83,7 +77,7 @@ header{
     justify-content: space-evenly;
 }
 .img1{
-    width: 30rem;
+    width: 20rem;
 }
 .logo{
     font-size: 3rem;
@@ -154,6 +148,7 @@ background-color: var(--dark-blue);
 }
 
 
+
 /* Section two */
 .section-two{
     display: flex;
@@ -205,6 +200,9 @@ background-color: var(--dark-blue);
 }
 
 /* Section Three */
+.section-three{
+    margin-top: 50px;
+}
 .section-heading{
     font-size: 2.5rem;
     text-align: center;
@@ -235,6 +233,7 @@ background-color: var(--dark-blue);
 /* Section Four */
 
 .section-four{
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -290,6 +289,9 @@ background-color: var(--dark-blue);
    transition:transform 0.5s ease-in-out;
 }
 /* Section Five */
+.section-five{
+    margin-top: 50px;
+}
 .grid-container{
     /* background-color: red; */
     width: 60%;
@@ -367,6 +369,7 @@ background-color: var(--dark-blue);
 
 /* Footer */
 footer{
+    margin-top: 30px;
     background-color: var(--light-black);
     height: 10vh;
     width: 100%;
@@ -380,9 +383,121 @@ footer{
     
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+/* Common button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Specific styles for Log In button */
+.log-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.log-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for Sign Up button */
+.sign-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+.sign-btn:hover {
+    background-color: #218838;
+}
+/* login-form and Registerd */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+/* body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    margin: 0 10px; 
+    width: calc(50% - 20px); 
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.input-field {
+    margin-bottom: 20px;
+}
+
+.input-field label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-field button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-field button:hover {
+    background-color: #0056b3;
+}
+
+
 
 /* Media Queries for mobile display */
 /*Section one */
+
+
 @media only screen and (max-width: 576px){
     .image{
         display: none;

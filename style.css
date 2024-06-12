@@ -22,6 +22,12 @@ html{
     scroll-behavior: smooth;
 }
 
+/* Search Section */
+
+
+
+
+
 /* Hero Section */
  /* background-color: burlywood; */
 
@@ -296,7 +302,7 @@ background-color: var(--dark-blue);
 .grid-container{
     /* background-color: red; */
     width: 60%;
-    height: 70vh;
+    height: 90vh;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -369,20 +375,90 @@ background-color: var(--dark-blue);
 }
 
 /* Footer */
-footer{
-    margin-top: 30px;
-    background-color: var(--light-black);
-    height: 10vh;
+
+footer {
     width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
-.footer-content{
-    color: white;
-    font-size: 1.5rem;
-    
+
+.footer-section {
+    flex: 1;
+    margin: 20px 0;
+    min-width: 200px;
 }
+
+.footer-section h2 {
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section .social-icons {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #f0a500;
+}
+
+.footer-section .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-section .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s;
+}
+
+.footer-section .social-icons img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #aaa;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
 
 ul {
     list-style-type: none;

@@ -5,3 +5,5 @@ const navlinks = document.getElementById("navlinks");
 hamburger.addEventListener("click", ()=>{
     navlinks.classList.toggle("navlinks-active");
 })
+
+// Search Section
